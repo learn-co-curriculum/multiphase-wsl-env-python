@@ -1,8 +1,14 @@
 # Windows WSL2 Python Installation
 
-**Note**: We do not install Python using the installer from python.org in our
-curriculum. If you have installed Python using this tool, you should uninstall
-it before installing this version of Python.
+**Note**: Depending on where you are in the curriculum and when you started the
+program, you may already have installed `pyenv`, Python, and `pipenv`. If so,
+you are free to skip this lesson. Before continuing, however, we recommend that
+you verify that everything is set up correctly by completing the steps in the
+next lesson.
+
+**Important**: We do not install Python using the installer from python.org in
+our curriculum. If you have installed Python using this tool, you should
+uninstall it before installing this version of Python.
 
 Currently the curriculum for this course is compatible with Python 3.8.
 
@@ -53,7 +59,7 @@ eval "$(pyenv init --path)"
 
 To get your startup file to execute, restart your terminal.
 
-***
+---
 
 ## Installing Dependencies on Windows and Ubuntu
 
@@ -108,7 +114,7 @@ $ python3 --version
 
 Both of these commands should show 3.8.13
 
-***
+---
 
 ## Installing Pipenv
 
@@ -127,4 +133,5 @@ after the `eval "$(pyenv init -)"`:
 $ export PIPENV_VENV_IN_PROJECT=1
 ```
 
-Congratulations! If you've completed all these steps you are ready to code in Python!
+Congratulations! If you've completed all these steps you are ready to code in
+Python!
