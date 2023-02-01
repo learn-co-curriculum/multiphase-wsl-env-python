@@ -1,6 +1,22 @@
 ---
 :lessons:
-- :id: 240836
+- :id: 247170
+  :course_id: 6602
+  :canvas_url: https://learning.flatironschool.com/courses/6602/pages/windows-wsl2-python-installation
+  :type: page
+- :id: 247171
+  :course_id: 6638
+  :canvas_url: https://learning.flatironschool.com/courses/6638/pages/windows-wsl2-python-installation
+  :type: page
+- :id: 247173
+  :course_id: 6667
+  :canvas_url: https://learning.flatironschool.com/courses/6667/pages/windows-wsl2-python-installation
+  :type: page
+- :id: 247174
+  :course_id: 4430
+  :canvas_url: https://learning.flatironschool.com/courses/4430/pages/windows-wsl2-python-installation
+  :type: page
+- :id: 247176
   :course_id: 5935
   :canvas_url: https://learning.flatironschool.com/courses/5935/pages/windows-wsl2-python-installation
   :type: page
