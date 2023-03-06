@@ -126,7 +126,7 @@ $ pip install pipenv
 ```
 
 After you have installed pipenv, modify your shell startup file (either
-`~/.bash_profile` or `~/.zshrc`) to add an export line. This should go somewhere
+`~/.bashrc` or `~/.zshrc`) to add an export line. This should go somewhere
 after the `eval "$(pyenv init -)"`:
 
 ```console
