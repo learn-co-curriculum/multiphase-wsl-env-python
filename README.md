@@ -127,7 +127,7 @@ $ pip install pipenv
 
 After you have installed pipenv, modify your shell startup file (either
 `~/.bashrc` or `~/.zshrc`) to add an export line. This should go somewhere
-after the `eval "$(pyenv init -)"`:
+after the `eval "$(pyenv init --path)"`:
 
 ```console
 $ export PIPENV_VENV_IN_PROJECT=1
