@@ -4,7 +4,7 @@
 program, you may already have installed `pyenv`, Python, and `pipenv`. If so,
 you are free to skip this lesson. Before continuing, however, we recommend that
 you verify that everything is set up correctly by completing the steps in the
-next lesson.
+"Verify and Troubleshoot your WLS2 Environment Setup" lesson.
 
 **Important**: We do not install Python using the installer from python.org in
 our curriculum. If you have installed Python using this tool, you should
