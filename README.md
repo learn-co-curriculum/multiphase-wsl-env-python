@@ -38,7 +38,7 @@ The file that you have to update will depend on which shell you are running. You
 $ echo $SHELL
 ```
 
-When you set up WSL, the default shell is `/bin/bash`, which means the file we need to up;date is the `.bashrc` file.
+When you set up WSL, the default shell is `/bin/bash`, which means the file we need to update is the `.bashrc` file.
 
 To open the `.bashrc` file with VSCode, run the following command:
 
