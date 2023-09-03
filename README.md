@@ -30,7 +30,7 @@ $ curl https://pyenv.run | bash
 [pyenv-installer]: https://github.com/pyenv/pyenv-installer
 
 Unlike nvm, pyenv does not automatically add its startup lines to your shell
-startup file. The shell startup file enables you to interact with your programs via the Ubuntu terminal. Thus, if you don't update this file, when you try to use pyenv, you will recieve the message `bash: command not found: pyenv`.
+startup file. The shell startup file enables you to interact with your programs via the Ubuntu terminal. Thus, if you don't update this file, when you try to use pyenv, you will receive the message `bash: command not found: pyenv`.
 
 The file that you have to update will depend on which shell you are running. You can check which shell you have from your terminal by running the command:
 
@@ -38,17 +38,9 @@ The file that you have to update will depend on which shell you are running. You
 $ echo $SHELL
 ```
 
-this should display either `/bin/bash` or `bin/zsh`.
+When you set up WSL, the default shell is `/bin/bash`, which means the file we need to up;date is the `.bashrc` file.
 
-Based on which you see in your terminal, you will either need to update the `.bashrc` or `.zshrc` file. To update this file we will use Visual Studio Code.
-
-To open the `.zshrc` or `.bashrc` file with VSCode, run the following command:
-
-```console
-$ code ~/.zshrc
-```
-
-or
+To open the `.bashrc` file with VSCode, run the following command:
 
 ```console
 $ code ~/.bashrc
@@ -71,8 +63,7 @@ Leave your Visual Studio Code application open, because we are going to have to 
 ## Installing Dependencies on Windows and Ubuntu
 
 For Windows and Ubuntu users you will need to install some extra dependencies
-for Python. (See here for more information about the prerequisites: pyenv
-Prerequisites)
+for Python.
 
 First run this command to update your apt repositories:
 
@@ -132,8 +123,7 @@ about what Pipenv is later; for now, go ahead and install it:
 $ pip install pipenv
 ```
 
-After you have installed pipenv, modify your shell startup file (either
-`~/.bashrc` or `~/.zshrc`) to add an export line.
+After you have installed pipenv, modify your shell startup file (`.bashrc`) to add an export line.
 
 **Note:** If you closed out VSCode, refer back to the instructions above on how to re-open the shell startup file.
 
