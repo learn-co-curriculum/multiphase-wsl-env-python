@@ -18,10 +18,10 @@ Before installing Python, we need to install the Python version manager pyenv.
 This is similar to the nvm tool we used to install Node.JS, except it controls
 which versions of Python we use on our system.
 
-To install pyenv, we use the [pyenv-installer][].
+To install pyenv, we use the `pyenv-installer`.
 
-Per the instructions on the [pyenv-installer][] website, we start by running the
-following command:
+Per the instructions on the `pyenv-installer` website, we start by running the
+following command in your Ubuntu terminal:
 
 ```console
 $ curl https://pyenv.run | bash
@@ -30,26 +30,23 @@ $ curl https://pyenv.run | bash
 [pyenv-installer]: https://github.com/pyenv/pyenv-installer
 
 Unlike nvm, pyenv does not automatically add its startup lines to your shell
-startup file.
+startup file. The shell startup file enables you to interact with your programs via the Ubuntu terminal. Thus, if you don't update this file, when you try to use pyenv, you will receive the message `bash: command not found: pyenv`.
 
-The files that you have to change will depend on which shell you are running
-(you can check which shell you have by running echo $SHELL). Follow the
-instructions to update the startup files associated with the shell that you are
-running.
-
-Open your `.zshrc` or `.bashrc` file with the following command:
+The file that you have to update will depend on which shell you are running. You can check which shell you have from your terminal by running the command:
 
 ```console
-$ code ~/.zshrc
+$ echo $SHELL
 ```
 
-or
+When you set up WSL, the default shell is `/bin/bash`, which means the file we need to update is the `.bashrc` file.
+
+To open the `.bashrc` file with VSCode, run the following command:
 
 ```console
 $ code ~/.bashrc
 ```
 
-Add the following lines:
+Inside of Visual Studio Code, scroll to the bottom of the file and add the following lines:
 
 ```text
 export PYENV_ROOT="$HOME/.pyenv"
@@ -57,15 +54,16 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 ```
 
-To get your startup file to execute, restart your terminal.
+**Note:** After you add this code to your startup file, you will need to save this file. In the top tool bar you can click **file** > **save** or you can enable auto save by clicking on **file** > **auto save**. This automatically saves every change you make to any file from here on out.
+
+Leave your Visual Studio Code application open, because we are going to have to update your shell startup file again later. To get your Ubuntu terminal to recognize the changes made to your startup file, restart your terminal.
 
 ---
 
 ## Installing Dependencies on Windows and Ubuntu
 
 For Windows and Ubuntu users you will need to install some extra dependencies
-for Python. (See here for more information about the prerequisites: pyenv
-Prerequisites)
+for Python.
 
 First run this command to update your apt repositories:
 
@@ -125,12 +123,15 @@ about what Pipenv is later; for now, go ahead and install it:
 $ pip install pipenv
 ```
 
-After you have installed pipenv, modify your shell startup file (either
-`~/.bashrc` or `~/.zshrc`) to add an export line. This should go somewhere
-after the `eval "$(pyenv init --path)"`:
+After you have installed pipenv, modify your shell startup file (`.bashrc`) to add an export line.
 
-```console
-$ export PIPENV_VENV_IN_PROJECT=1
+**Note:** If you closed out VSCode, refer back to the instructions above on how to re-open the shell startup file.
+
+The export line should go somewhere
+after the `eval "$(pyenv init --path)"`. To create a new line, click on the end of the last line of the file and hit **Enter** on your keyboard. Then, on the newly created line paste in the code below:
+
+```text
+export PIPENV_VENV_IN_PROJECT=1
 ```
 
 Congratulations! If you've completed all these steps you are ready to code in
